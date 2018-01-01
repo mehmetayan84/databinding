@@ -22,7 +22,6 @@ export class AppComponent {
       name: blueprintData.blueprintName,
       description: blueprintData.blueprintDescription
     });
-    console.log(blueprintData.blueprintName + " " +blueprintData.blueprintDescription);
   }
 
 }
