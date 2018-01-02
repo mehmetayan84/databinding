@@ -5,6 +5,11 @@
   <div class="row">
     <div class="col-xs-12">
       <app-display *ngFor="let serverElement of serverElements" [srvElement]="serverElement">
+          <p>
+              <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.description }}
+              </strong>
+              <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.description }}</em>
+          </p>
       </app-display>
     </div>
   </div>
